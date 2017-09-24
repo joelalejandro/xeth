@@ -1,5 +1,5 @@
 {
-  "name": "xet",
+  "name": "xeth",
   "version": "0.0.1",
   "description": "A CLI for Xethya projects.",
   "main": "index.js",
@@ -35,6 +35,6 @@
     "eslint-config-xethya": "0.0.1"
   },
   "bin": {
-    "xet": "./index.js"
+    "xeth": "./index.js"
   }
 }

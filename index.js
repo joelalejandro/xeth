@@ -2,24 +2,31 @@ const chalk = require('chalk');
 const packageJson = require('./package.json');
 
 console.log(chalk.yellow(`
-                             #
-                            ##
-                            ##
- /##    ###       /##     ########
-/ ###  #### /    / ###   ########
-   ### /###/    /   ###     ##
-    ##/  ##    ##    ###    ##
-     /##       ########     ##          The Xethya CLI
-    / ###      #######      ##          v${packageJson.version}
-   /   ###     ##           ##
-  /     ###    ####    /    ##
- /       ### /  ######/     ##
-/         ##/    #####       ##
+
+                                     /
+                                   #/
+                             #     ##
+                            ##     ##
+                            ##     ##
+ /##    ###       /##     ######## ##  /##
+/ ###  #### /    / ###   ########  ## / ###
+   ### /###/    /   ###     ##     ##/   ###
+    ##/  ##    ##    ###    ##     ##     ##
+     /##       ########     ##     ##     ##
+    / ###      #######      ##     ##     ##
+   /   ###     ##           ##     ##     ##
+  /     ###    ####    /    ##     ##     ##
+ /       ### /  ######/     ##     ##     ##
+/         ##/    #####       ##     ##    ##
+                                          /
+      The CLI for Xethya                 /
+                                        /
+                                       /
 `));
 
 require('yargs')
 .locale('en')
-.demandCommand(1, 'Usage: xet <command> <args>')
+.demandCommand(1, 'Usage: xeth <command> <args>')
 .command(
   'project:new',
   'Creates a new Xethya project',
