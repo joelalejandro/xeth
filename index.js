@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/bin/env node
 const chalk = require('chalk');
 const packageJson = require('./package.json');
 
