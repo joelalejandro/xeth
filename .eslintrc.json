@@ -1,0 +1,6 @@
+{
+  "extends": "xethya",
+  "env": {
+    "node": true
+  }
+}
